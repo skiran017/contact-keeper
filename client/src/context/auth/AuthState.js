@@ -48,4 +48,4 @@ const AuthState = (props) => {
   );
 };
 
-export default Authtate;
+export default AuthState;
