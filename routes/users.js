@@ -51,7 +51,7 @@ router.post(
       };
       jwt.sign(
         payload,
-        config.get('jwtSecret'),
+        config.get('jwtSecret') || process.env.jwtSecret,
         {
           expiresIn: 360000,
         },
